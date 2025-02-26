@@ -2,7 +2,8 @@
 
 A Three.js-based tool for creating stunning 3D liquid dispersion effects for logos, inspired by the Liquid Paper project.
 
-![Logo Enhancer 3D Demo](demo.gif)
+![Logo Enhancer 3D Demo]![Uploading ezgif-5a8e382662c51c.gif…]()
+
 
 ## 🌟 Features
 

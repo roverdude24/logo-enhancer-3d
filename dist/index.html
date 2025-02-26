@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGO ENHANCER 3000 - 3D Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: white;
+    }
+    
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .header {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      text-align: center;
+      pointer-events: none;
+      font-family: 'Lumanosimo', cursive;
+    }
+    
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      text-shadow: 0 0 10px rgba(0,128,255,0.8);
+      letter-spacing: 1px;
+    }
+    
+    .header h2 {
+      font-size: 20px;
+      margin: 5px 0 0 0;
+      opacity: 0.8;
+      font-weight: normal;
+    }
+    
+    .upload-container {
+      position: fixed;
+      left: 20px;
+      top: 20px;
+      z-index: 100;
+    }
+    
+    button {
+      background: rgba(0, 118, 255, 0.8);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      transition: background 0.2s;
+    }
+    
+    button:hover {
+      background: rgba(0, 138, 255, 0.9);
+    }
+    
+    input[type="file"] {
+      display: none;
+    }
+
+    #imageUpload,
+    .upload-container input[type="file"] {
+      display: none;
+    }
+    
+    .loading-indicator {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 200;
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+    }
+    
+    .loading-indicator.active {
+      display: block;
+    }
+
+    .hidden {
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+    
+    /* Remove .gui-hidden class and use direct style manipulation instead */
+    
+    /* Fade transitions for everything except dat.GUI */
+    .header, .upload-container {
+      transition: opacity 0.3s ease;
+    }
+    
+    /* Position GUI in top-right corner */
+    .dg.ac {
+      top: 20px !important;
+      right: 20px !important;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-CXZLeSAG.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>LOGO ENHANCER 3000</h1>
+    <h2>Liquid Metal 3D Edition</h2>
+  </div>
+
+  <div class="upload-container">
+    <input type="file" id="imageUpload" accept=".svg,.png,.jpg,.jpeg">
+    <button id="uploadBtn">Upload File</button>
+  </div>
+  
+  <canvas id="glCanvas"></canvas>
+  
+  <div class="loading-indicator" id="loadingIndicator">
+    Processing... Please wait.
+  </div>
+  
+</body>
+</html>
+

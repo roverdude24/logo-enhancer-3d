@@ -33,14 +33,8 @@ git clone https://github.com/yourusername/logo-enhancer-3d.git
 npm install
 
 # Run development server
-npm run dev
+npm run de
 
-# Build for production
-npm run build
-
-# Deploy to GitHub Pages
-npm run deploy
-```
 
 ## 🛠️ Built With
 

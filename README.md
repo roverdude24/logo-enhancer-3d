@@ -33,7 +33,7 @@ git clone https://github.com/yourusername/logo-enhancer-3d.git
 npm install
 
 # Run development server
-npm run de
+npm run dev
 
 
 ## 🛠️ Built With
@@ -46,7 +46,7 @@ npm run de
 ## 🎨 Usage
 
 1. Open the application in your browser
-2. Upload your logo
+2. Upload your svg file
 3. Use the GUI controls to:
    - Adjust dispersion effects
    - Modify material properties

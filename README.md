@@ -27,7 +27,7 @@ A Three.js-based tool for creating 3D liquid dispersion effects for logos from s
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/logo-enhancer-3d.git
+git clone https://github.com/roverdude24/logo-enhancer-3d.git
 
 # Install dependencies
 npm install
